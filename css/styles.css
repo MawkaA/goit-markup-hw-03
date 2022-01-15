@@ -1,0 +1,205 @@
+:root {
+   --primary-text-color:#212121;
+   --secondary-text-color: #757575;
+   --accent-color: #2196F3; 
+   --primary-white-color: #FFFFFF;
+   --primary-bgcolor:#2F303A;
+   --secondary-bgcolor: #E5E5E5;
+   --tertiary-bgcolor: #F5F4FA;
+}
+
+body { 
+    color: var(--primary-text-color);
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+      }
+
+
+/* боксы*/
+.box1{ background-color: var(--primary-white-color);
+
+}
+
+.box2 {
+    background-color: var(--primary-bgcolor)
+   
+}
+
+.box3 {
+    background-color: var(--secondary-bgcolor);
+}
+
+.box4 {
+    background-color: var(--secondary-bgcolor);
+}
+
+.box5 {
+    background-color: var(--tertiary-bgcolor);
+}
+
+.box6 {
+    background-color: var(--primary-bgcolor);
+}
+
+.box7 {
+    background-color: var(--secondary-bgcolor);
+}
+
+/* все что с хувер эффектом*/
+
+.header{ color: inherit;
+         font-weight: 500;
+         font-size: 14px;
+         line-height: 1.14;
+         letter-spacing: 0.02em;
+         text-decoration: none;
+         }
+
+.header:hover, .header:focus { 
+    color: var(--accent-color);
+}
+
+
+.header.active {
+    color: var(--accent-color);
+}
+
+.contact1 {
+    color: var(--secondary-text-color);
+}
+
+.submit {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.filter {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color:var(--primary-text-color);
+}
+
+.filter:hover, .filter:focus { background-color: var(--accent-color);
+                               color:var(--primary-white-color);
+}
+
+/* все описания */
+
+.description {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+}
+
+.primary {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em; 
+    font-weight: 400; 
+
+}
+
+.secondary {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+/* Logo*/
+
+.logo {
+    color: var(--accent-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo2 {
+    color: var(--primary-text-color);
+}
+
+.logo3 { 
+    color: var(--primary-white-color);
+}
+
+/*footer*/
+
+.footer {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--primary-white-color);
+    text-decoration: none;
+}
+
+.footer:hover, .footer:focus { 
+    color: var(--accent-color);
+}
+
+.contact {
+    color: rgba(255,255,255, 0.6);
+}
+
+/*все заголовки*/
+
+.heading1 {
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform:uppercase;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+}
+
+.heading3 {
+    font-size: 14px;
+    line-height: 1.14;
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.heading4 {
+    font-size: 36px;
+    line-height: 1.16;
+    color: imherit;
+}
+
+.heading5 {
+    font-style: medium;
+    font-size: 16px;
+    line-height: 1.18;
+    color: inherit;
+
+}
+
+.heading6 {
+    color: inherit;
+    font-size: 18px;
+    line-height: 2;
+}
+
+/* Списки*/
+
+.list {
+    list-style-type:none;
+}
