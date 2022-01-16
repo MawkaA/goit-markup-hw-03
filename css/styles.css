@@ -8,6 +8,13 @@
    --tertiary-bgcolor: #F5F4FA;
 }
 
+/*основные контейнеры разметка */
+
+.container {
+    width: 1200px;
+    height: auto;
+}
+
 body { 
     color: var(--primary-text-color);
     font-family: 'Roboto',sans-serif;
@@ -16,10 +23,51 @@ body {
       }
 
 
-/* боксы*/
-.box1{ background-color: var(--primary-white-color);
+/* все контейнеры */
 
+.section{ 
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
+/*хедер размещение меню*/
+
+.box1{ 
+    background-color: var(--primary-white-color);
+    width: auto;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 93px;
+    padding-right: 331px;
+}
+
+.list {
+    display: flex;
+}
+
+.list:not(:last-child) {
+    margin-right: 50px;
+}
+
+
 
 .box2 {
     background-color: var(--primary-bgcolor)
@@ -44,6 +92,16 @@ body {
 
 .box7 {
     background-color: var(--secondary-bgcolor);
+
+}
+
+.list.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list.items li {
+    border: 1px solid #EEEEEE;
 }
 
 /* все что с хувер эффектом*/
@@ -92,8 +150,9 @@ body {
     color:var(--primary-text-color);
 }
 
-.filter:hover, .filter:focus { background-color: var(--accent-color);
-                               color:var(--primary-white-color);
+.filter:hover, .filter:focus {
+    background-color: var(--accent-color);
+    color:var(--primary-white-color);
 }
 
 /* все описания */

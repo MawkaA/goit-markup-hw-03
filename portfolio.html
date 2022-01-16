@@ -9,14 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/modern-normalize.css">
 </head>
 
-<body>
+<body class="container">
+
+<!-- Заголовок с лого и навигацией, такой же как на главной странице
+Добавить ссылки в навигацию-->
 
     <header class="box1">
-        <div>
+
+        <div class="bar">
+
             <a class="logo" href="./index.html">Web<span class="logo2">Studio</span> </a>
-            <!--добавить ссылки в навигацию-->
+          
+
             <nav>
                 <ul class="list">
                     <li><a class="header" href="./index.html">Студия</a></li>
@@ -24,15 +31,22 @@
                     <li><a class="header" href="">Контакты</a></li>
                 </ul>
             </nav>
+
         </div>
+
         <ul class="list">
             <li><a class="header contact1" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="header contact1" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
 
-    <main>
-        <section class="box7">
+<!--основной контент-->
+
+    <main >
+
+<!--кнопки фильтры-->
+
+        <section class="section box7">
             <ul class="list">
                 <li>
                     <button class="filter" type="button">Все</button>
@@ -51,7 +65,9 @@
                 </li>
             </ul>
 
-          <ul class="list">
+<!--Картинки проэктов с подписями-->
+
+          <ul class="list items">
                 <li>
                     <img src="./images/8.jpg" alt="открытый ноутбук с профайлами 3х людей" width="370" height="294"> 
                     <h2  class="heading6">Технокряк</h2> 
@@ -100,6 +116,8 @@
           </ul>
         </section>
     </main>
+
+<!--футер, такой же как и на главной стрице-->
 
     <footer class="box6">
         <a class="logo" href="./index.html">Web<span class="logo3">Studio</span> </a>

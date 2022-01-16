@@ -9,38 +9,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     </head>
 
-<body>
+<body class="container" >
+
+<!--заголовок, лого  и навингация, не забыть  добавить ссылки в навигацию-->
 
        <header class="box1">
-        <div>
+
+        <div class="bar">
             <a class="logo" href="./index.html">Web<span class="logo2">Studio</span></a>
-        <!--добавить ссылки в навигацию-->  
+
            <nav>
                <ul class="list">
             <li><a class="header active" href="./index.html">Студия</a></li>
             <li><a class="header" href="./portfolio.html">Портфолио</a></li>
             <li><a class="header" href="">Контакты</a></li>
-            </ul>
-        </nav>
+                </ul>
+            </nav>
         </div>
-        <ul class="list">
+
+        <ul class="list ">
         <li ><a class="header contact1" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li ><a class="header contact1" href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>
      </header>
 
-     <main>
+<!--Контент стравницы. 
+    заголовок наши качества в CSS в будущем скрыть,
+     но для отображения смыслового в браузере остаётся-->
 
-         <section class="box2">
+     <main >
+
+<!--Качества компании-->
+
+         <section class="section box2">
             <h1 class="heading1">эффективные решения<br>
                  для вашего бизнеса</h1>
             <button class="submit"  type="button">Заказать услугу</button>
         </section>
 
-        <section class="box3">
-    <!--мы скроем этот заголовок в CSS в будущем но для отображения смыслового в браузере остаётся -->
+        <section class="section box3">
+
             <h2 class="heading2"> Наши качества</h2>
             <ul class="list">
                 <li>
@@ -73,12 +84,14 @@
             </ul>
         </section>
 
-        <section class="box4">
+<!--Опичание услуг-->
+
+        <section class="section box4">
             <h2 class="heading4">Чем мы занимаемся</h2>
             <ul class="list">
                 <li>
                     <img src="./images/1.jpg"  alt="руки печатают код для веб сайта" 
-                width="370" height="284"/>
+                width="370" height="294"/>
                 </li>
                 <li>
                     <img  src="./images/2.jpg"  alt="одна рука держит телефон,вторая печатает на ноутбуке"
@@ -91,7 +104,9 @@
         </ul>
         </section>
 
-        <section class="box5">
+<!--Команда с фото и описанием -->
+
+        <section class="section box5">
             <h2 class="heading4">Наша команда</h2>
             <ul class="list">
                 <li>
@@ -118,6 +133,8 @@
         </section>
 
     </main>
+
+<!--Футер с адресами и лого-->
 
     <footer class="box6">
         <a class="logo" href="./index.html">Web<span class="logo3">Studio</span> </a>
