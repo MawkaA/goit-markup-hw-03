@@ -9,40 +9,41 @@
 }
 
 /*основные контейнеры разметка */
-
-.container {
-    width: 1200px;
-    height: auto;
+html {
+    box-sizing: border-box;
 }
 
-body { 
+*,
+*::before,
+*::after {
+      box-sizing: inherit;
+  }
+
+.container {
     color: var(--primary-text-color);
     font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: normal;
-      }
-
-
-/* все контейнеры */
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
 
 .section{ 
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 auto;
 }
 
-/*хедер размещение меню*/
+/*хедер */
 
 .box1{ 
     background-color: var(--primary-white-color);
-    width: auto;
-    padding-top: 24px;
-    padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: baseline;
 }
 
 .bar {
@@ -51,23 +52,68 @@ body {
     align-items: baseline;
 }
 
-nav {
+.menu {
+    display: flex;
+}
+.menu li {
+    display: inline;
+}
+
+.contact {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding-left: 93px;
-    padding-right: 331px;
-}
+     align-items: baseline;
 
-.list {
+}
+.contact li {
     display: flex;
-}
-
-.list:not(:last-child) {
-    margin-right: 50px;
+    flex-direction: row;
 }
 
 
+.header{ color: inherit;
+         font-weight: 500;
+         font-size: 14px;
+         line-height: 1.14;
+         letter-spacing: 0.02em;
+         text-decoration: none;
+         }
+
+.header:hover, .header:focus { 
+    color: var(--accent-color);
+}
+
+
+.header.active {
+    color: var(--accent-color);
+}
+
+.contact1 {
+    color: var(--secondary-text-color);
+}
+
+/*конец хедера*/
+/* Logo*/
+
+.logo {
+    color: var(--accent-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+   
+}
+
+.logo2 {
+    color: var(--primary-text-color);
+}
+
+.logo3 { 
+    color: var(--primary-white-color);
+}
+/* конец лого*/
 
 .box2 {
     background-color: var(--primary-bgcolor)
@@ -106,26 +152,6 @@ nav {
 
 /* все что с хувер эффектом*/
 
-.header{ color: inherit;
-         font-weight: 500;
-         font-size: 14px;
-         line-height: 1.14;
-         letter-spacing: 0.02em;
-         text-decoration: none;
-         }
-
-.header:hover, .header:focus { 
-    color: var(--accent-color);
-}
-
-
-.header.active {
-    color: var(--accent-color);
-}
-
-.contact1 {
-    color: var(--secondary-text-color);
-}
 
 .submit {
     font-family: inherit;
@@ -176,25 +202,6 @@ nav {
     line-height: 1.87;
 }
 
-/* Logo*/
-
-.logo {
-    color: var(--accent-color);
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-}
-
-.logo2 {
-    color: var(--primary-text-color);
-}
-
-.logo3 { 
-    color: var(--primary-white-color);
-}
 
 /*footer*/
 
