@@ -12,34 +12,28 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="container">
-
+<body >
+    
 <!-- Заголовок с лого и навигацией, такой же как на главной странице
 Добавить ссылки в навигацию-->
 
     <header class="box1">
-
-        <div class="bar">
-
-            <a class="logo" href="./index.html">Web<span class="logo2">Studio</span> </a>
-          
-
-            <nav>
+        <div class="container">
+            <nav class="bar">
                 <ul class="menu">
-                    <li><a class="header" href="./index.html">Студия</a></li>
-                    <li><a class="header active" href="./portfolio.html">Портфолио</a></li>
+                    <li><a class="logo" href="./index.html">Web<span class="logo2">Studio</span></a></li>
+                    <li><a class="header active" href="./index.html">Студия</a></li>
+                    <li><a class="header" href="./portfolio.html">Портфолио</a></li>
                     <li><a class="header" href="">Контакты</a></li>
                 </ul>
             </nav>
 
+            <ul class="contact">
+                <li><a class="header contact1" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="header contact1" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
         </div>
-
-        <ul class="contact">
-            <li><a class="header contact1" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="header contact1" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
     </header>
-
 <!--основной контент-->
 
     <main >
@@ -47,7 +41,8 @@
 <!--кнопки фильтры-->
 
         <section class="section box7">
-            <ul class="list">
+            <div class="container">
+            <ul class="list button">
                 <li>
                     <button class="filter" type="button">Все</button>
                 </li>
@@ -114,15 +109,17 @@
                     <p class="description secondary">Приложение</p> 
                 </li>
           </ul>
+        </div>
         </section>
     </main>
 
 <!--футер, такой же как и на главной стрице-->
 
     <footer class="box6">
+        <div class="container footer">
         <a class="logo" href="./index.html">Web<span class="logo3">Studio</span> </a>
         <address>
-            <ul class="list">
+            <ul class="address">
                 <li>
                     <a class="footer" href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4269006,30.5400176,16.75z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858">
                      г. Киев, пр-т Леси Украинки, 26</a>
@@ -135,6 +132,7 @@
                 </li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 </html>
