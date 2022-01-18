@@ -34,8 +34,7 @@ html {
 }
 
 .section { 
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0;
     margin: 0 auto;
 }
 
@@ -47,8 +46,7 @@ h5,
 h6,
 p,
 ul {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin:0 auto;
 }
 
 /*хедер */
@@ -56,12 +54,22 @@ ul {
 .box1{ 
     background-color: var(--primary-white-color);
     border-bottom: 1px solid #ECECEC;
-    display: flex;
     min-width: 1600px;
     height: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-top: 25px;
+
+
+}
+
+.container.first {
+    margin: 0 auto;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-bottom: 32px;
 }
 
 .menu {
@@ -69,26 +77,33 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    margin-left: 0;
-    margin-right: 331px;
+    margin: 0 auto;
+    
 }
+
 .menu li {
-    display: flex;
-    flex-direction: inherit;
-    align-items: inherit;
+    padding-right: 50px;
 }
 
 
+/*все списки на страницах*/
 .list {
     list-style-type:none;
     display: flex;
     flex-direction: row;
-    margin-right: 0;
-    margin-bottom: 32px;
-    margin-top: 32px;
+    margin:0 auto;
     padding: 0;
 }
+/* конец все списки на страницах*/
 
+.list.top {
+    margin: 0 auto;
+   
+}
+
+.list.top li {
+    padding-left: 50px;
+}
 
 .header{ color: inherit;
          font-weight: 500;
@@ -122,7 +137,7 @@ ul {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
-   
+    padding-right: 43px;
 }
 
 .logo2 {
@@ -140,7 +155,8 @@ ul {
     min-width: 1600px;
     height: auto;
     margin: 0 auto;
-    padding: 0;
+    padding-top:60px;
+    padding-bottom: 60px;
 }
 
 .container.footer {
@@ -186,13 +202,9 @@ ul {
 
     min-width: 1600px;
     height: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    padding-bottom: 200px;
-    padding-top: 200px;
+    margin:0 auto;
+    padding:200px 0;
 }
-
 
 
 .heading1 {
@@ -221,7 +233,7 @@ ul {
 
     border: 1px solid transparent;
     border-radius: 4px;
-    min-width: 250px;
+    min-width: 200px;
     margin: 0px auto;
     padding-top: 10px; 
     padding-bottom: 10px;
@@ -234,9 +246,10 @@ ul {
     background-color: var(--secondary-bgcolor);
     min-width: 1600px;
     height: auto;
-     margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 94px 0;
+    display: flex;
+    align-items: stretch;
 }
 
 .heading3 {
@@ -245,22 +258,24 @@ ul {
     color: inherit;
     text-transform: uppercase;
     font-weight: 700;
-
+    padding-bottom: 10px;
 }
 
 .list.quality {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    margin:0 auto;
+    padding: 0;
+
 }
 
 .list.quality li {
-margin-left: 0;
-margin-right: 30px;
+    padding-left: 0;
+    padding-right: 30px;
 }
 
 .description {
     color: var(--secondary-text-color);
     font-weight: 400;
+    
 }
 
 .primary {
@@ -268,7 +283,7 @@ margin-right: 30px;
     line-height: 1.7;
     letter-spacing: 0.03em; 
     font-weight: 400; 
-
+   
 }
 
 
@@ -279,8 +294,7 @@ margin-right: 30px;
     background-color: var(--secondary-bgcolor);
     min-width: 1600px;
     height: auto;
-     margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -288,13 +302,14 @@ margin-right: 30px;
     font-size: 36px;
     line-height: 1.16;
     color: inherit;
-    margin: 0 397px 50px ;
-    
+    margin: 0 auto;
+    padding: 0 0 50px;
+
 }
 
 .list.work {
-    margin-top: 0;
-    margin-bottom: 94px;
+    margin: 0 auto 94px;
+    
 }
 
 .list.work li {
@@ -309,25 +324,25 @@ margin-right: 30px;
     background-color: var(--tertiary-bgcolor);
     min-width: 1600px;
     height: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 94px 0px;
 }
 
 .heading4.team {
-    margin: 94px 452px 50px
+    margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 .list.team {
-    margin: 0 0 94px;
+    margin: 0 auto;
     border: 1px solid transparent;
     border-radius: 4px;
-    
+    padding: 0;
 }
 
 .list.team li{
-    margin-left: 0;
     margin-right: 30px;
+    padding: 0;
     background-color: var(--primary-white-color);
 }
 
@@ -352,14 +367,25 @@ margin-right: 30px;
     background-color: var(--secondary-bgcolor);
     min-width: 1600px;
     height: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 94px 0;
 
 }
 
 
 /*portfolio buttons*/
+
+.list.button {
+    margin:0 auto; 
+    padding: 0 301px 56px 302px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.list.button li:not(last-child) {
+ padding-right: 8px;
+}
 
 .filter {
     font-family: inherit;
@@ -371,6 +397,16 @@ margin-right: 30px;
     border: 1px solid transparent;
     text-align: center;
     border-radius: 4px;
+    height: 38px;
+    min-width: 73px;
+    padding: 6px 22px;
+    
+}
+
+.filter.web {
+    min-width: 128px;
+    padding-bottom: 22px ;
+    white-space: nowrap;
 }
 
 .filter:hover, .filter:focus {
@@ -378,16 +414,6 @@ margin-right: 30px;
     color:var(--primary-white-color);
 }
 
-.list.button {
-    display: flex;
-    justify-content: space-between;
-    margin:100px 301px 56px 280px  
-}
-
-.list.button li {
-    margin-left: 0;
-    margin-right: 8px;
-}
 
 
 /*portfolio ends buttons*/
@@ -401,6 +427,7 @@ margin-right: 30px;
 
 .list.items li {
     border: 1px solid #EEEEEE;
+    background-color: var(--primary-white-color);
     margin-right: 15px;
     margin-bottom: 50px;
     margin-top: 0;
@@ -411,14 +438,17 @@ margin-right: 30px;
     color: inherit;
     font-size: 18px;
     line-height: 2;
+    margin: 0 auto;
+    padding: 20px 24px 0;
 }
 
 .secondary {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
+    margin: 0 auto;
+    padding: 4px 24px 20px;
 }
-
 
 /*portfolio конец сетки картинок-фильтров*/
 /*portfolio конец контента*/
