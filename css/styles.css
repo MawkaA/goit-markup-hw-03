@@ -341,7 +341,8 @@ ul {
 .hero4-list {
     margin: 0 auto;
     border: 1px solid transparent;
-    border-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
     padding: 0;
 }
 
