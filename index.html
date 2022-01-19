@@ -15,82 +15,84 @@
 <body >
     
 
-<!--заголовок, лого  и навингация, не забыть  добавить ссылки в навигацию-->
+<!--Header, не забыть  добавить ссылки в навигацию-->
 
-    <header class="box1">
-        <div class="container first">
-           <nav>
-            <ul class="menu">
-                <li><a class="logo" href="./index.html">Web<span class="logo2">Studio</span></a></li>
-                <li><a class="header active" href="./index.html">Студия</a></li>
-                <li><a class="header" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="header" href="">Контакты</a></li>
+    <header class="header">
+        <div class="container header-box">
+            <a class="logo" href="./index.html">Web<span class="logo2">Studio</span></a>
+            <nav class="menu">
+            <ul class="menu-nav">
+                <li><a class="header-list active" href="./index.html">Студия</a></li>
+                <li><a class="header-list " href="./portfolio.html">Портфолио</a></li>
+                <li><a class="header-list" href="">Контакты</a></li>
             </ul>
             </nav>
-            <ul class="list top">
-                <li ><a class="header contact1" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li ><a class="header contact1" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <ul class="header-contacts">
+                <li ><a class="header-list contact1" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li ><a class="header-list contact1" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
 
 <!--Контент стравницы. 
     заголовок наши качества в CSS  скрыт,
-     но для отображения смыслового в браузере остаётся-->
+    но для отображения смыслового в браузере остаётся-->
 
-     <main >
+    <main class="hero">
 
-<!--Качества компании-->
+<!--Качества компании section1 hero1-->
 
-         <section class="section box2">
-            <div class="container">
-            <h1 class="heading1">эффективные решения<br>
-                 для вашего бизнеса</h1>
-            <button class="submit"  type="button">Заказать услугу</button>
+        <section class="section hero1">
+            <div class="container hero1-box ">
+            <h1 class="hero1-heading">эффективные решения<br>
+                для вашего бизнеса</h1>
+            <button class="hero1-btn"  type="button">Заказать услугу</button>
             </div>
         </section>
 
-        <section class="section box3">
-            <div class="container box3">
-            <h2 class="heading2" hidden> Наши качества</h2>
-            <ul class="list quality">
-                <li>
-                    <h3 class="heading3">Внимание к деталям</h3>
+<!-- Hаши качества section2 hero1 -->
 
-                    <p class="description primary">Идейные соображения, а также<br>
+        <section class="section hero2">
+            <div class="container hero2-box">
+            <h2 class="visually-hidden" > Наши качества</h2>
+            <ul class="list hero2-list">
+                <li>
+                    <h3 class="hero2-heading">Внимание к деталям</h3>
+
+                    <p class="description hero2-description">Идейные соображения, а также<br>
                         начало повседневной работы по<br>
                         формированию позиции.</p>
                 </li>
                 <li>
-                    <h3 class="heading3">Пунктуальность</h3>
+                    <h3 class="hero2-heading">Пунктуальность</h3>
 
-                    <p class="description primary">Задача организации, в особенности<br>
-                       же рамки и место обучения кадров<br>
-                       влечет за собой.</p>
+                    <p class="description hero2-description">Задача организации, в особенности<br>
+                        же рамки и место обучения кадров<br>
+                        влечет за собой.</p>
                 </li>
                 <li>
-                    <h3 class="heading3">Планирование</h3>
+                    <h3 class="hero2-heading">Планирование</h3>
 
-                    <p class="description primary">Равным образом консультация с<br>
-                       широким активом в значительной<br>
-                       степени обуславливает.</p>
+                    <p class="description hero2-description">Равным образом консультация с<br>
+                        широким активом в значительной<br>
+                        степени обуславливает.</p>
                 </li>
                 <li>
-                    <h3 class="heading3">Современные технологии</h3>
-                    <p class="description primary">Значимость этих проблем настолько<br>
-                       очевидна, что реализация плановых<br>
-                       заданий.</p>
+                    <h3 class="hero2-heading">Современные технологии</h3>
+                    <p class="description hero2-description">Значимость этих проблем настолько<br>
+                        очевидна, что реализация плановых<br>
+                        заданий.</p>
                 </li>
             </ul>
             </div>
         </section>
 
-<!--Опичание услуг-->
+<!--Опичание услуг section3 hero3 -->
 
-        <section class="section box4">
-            <div class="container">
-            <h2 class="heading4">Чем мы занимаемся</h2>
-            <ul class="list work">
+        <section class="section hero3">
+            <div class="container hero3-box">
+            <h2 class="hero3-heading">Чем мы занимаемся</h2>
+            <ul class="list hero3-list">
                 <li>
                     <img src="./images/1.jpg"  alt="руки печатают код для веб сайта" 
                 width="370" height="294"/>
@@ -101,37 +103,37 @@
                 </li>
                 <li>
                     <img  src="./images/3.jpg"  alt="руки рисуют на планшете с помощью ручки" 
-                 width="370" height="294"/>
+                    width="370" height="294"/>
                 </li>
             </ul>
             </div>
         </section>
 
-<!--Команда с фото и описанием -->
+<!--Команда с фото и описанием section4 hero4  -->
 
-        <section class="section box5">
-            <div class="container">
-            <h2 class="heading4 team">Наша команда</h2>
-            <ul class="list team">
+        <section class="section hero4">
+            <div class="container hero4-box">
+            <h2 class="hero4-heading">Наша команда</h2>
+            <ul class="list hero4-list">
                 <li>
                     <img src="./images/4.jpg"  alt="Игорь Демьяненко" width="270" height="260"/>
-                    <h3 class="heading5">Игорь Демьяненко</h3>
-                     <p class="description1" lang="en">Product Designer</p>
+                    <h3 class="hero4-subheading">Игорь Демьяненко</h3>
+                    <p class="hero4-description" lang="en">Product Designer</p>
                 </li>
                 <li>
                     <img src="./images/5.jpg" alt="Ольга Репина" width="270" height="260" />
-                    <h3 class="heading5">Ольга Репина</h3>
-                    <p class="description1" lang="en">Frontend Developer</p>
+                    <h3 class="hero4-subheading">Ольга Репина</h3>
+                    <p class="hero4-description" lang="en">Frontend Developer</p>
                 </li>
                 <li>
                     <img src="./images/6.jpg" alt="Николай Тарасов" width="270" height="260" />
-                    <h3  class="heading5">Николай Тарасов</h3>
-                    <p class="description1" lang="en">Marketing</p>
+                    <h3  class="hero4-subheading">Николай Тарасов</h3>
+                    <p class="hero4-description" lang="en">Marketing</p>
                 </li>
                 <li>
                     <img src="./images/7.jpg" alt="Михаил Ермаков" width="270" height="260" />
-                    <h3 class="heading5">Михаил Ермаков</h3>
-                    <p class="description1" lang="en">UI Designer</p>
+                    <h3 class="hero4-subheading">Михаил Ермаков</h3>
+                    <p class="hero4-description" lang="en">UI Designer</p>
                 </li>
             </ul>
             </div>
@@ -141,20 +143,20 @@
 
 <!--Футер с адресами и лого-->
 
-    <footer class="box6">
-        <div class="container footer">
-        <a class="logo" href="./index.html">Web<span class="logo3">Studio</span> </a>
-        <address>
-            <ul class="address">
+    <footer class="footer">
+        <div class="container footer-box">
+        <a class="logo logo-footer" href="./index.html">Web<span class="logo3">Studio</span> </a>
+        <address class="footer-address">
+            <ul class="footer-list">
                 <li> 
-                    <a class="footer" href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4269006,30.5400176,16.75z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858">
-                         г. Киев, пр-т Леси Украинки, 26</a>
+                    <a class="footer-link" href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4269006,30.5400176,16.75z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858">
+                        г. Киев, пр-т Леси Украинки, 26</a>
                 </li>
                 <li>
-                    <a class="footer contact"  href="mailto:info@example.com">info@example.com</a>
+                    <a class="footer-link footer-contact"  href="mailto:info@example.com">info@example.com</a>
                 </li>
                 <li>
-                    <a class="footer contact" href="tel:0991111111">099 111 11 11</a>
+                    <a class="footer-link footer-contact" href="tel:0991111111">099 111 11 11</a>
                 </li>
             </ul>
         </address>
