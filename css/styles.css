@@ -18,7 +18,7 @@ html {
 *,
 *::before,
 *::after {
-      box-sizing: inherit;
+    box-sizing: inherit;
   }
 
 body {
@@ -50,6 +50,10 @@ h6,
 p,
 ul {
     margin:0 auto;
+}
+
+img {
+    display: block;
 }
 
 .visually-hidden {
